@@ -1,0 +1,46 @@
+.header {
+  padding-top: 24px;
+  padding-bottom: 105px;
+  background-image: linear-gradient(var(--fon)), url(../img/header-fon.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: var(--inversion);
+}
+
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-logo {
+  margin-left: 9px;
+}
+
+.header-title {
+  font-size: 52px;
+  font-weight: 900;
+  line-height: 116%;
+  text-align: center;
+  color: var(--block-title);
+  margin-top: 115px;
+}
+
+.header-text {
+  text-align: center;
+  font-size: 22px;
+  line-height: 141%;
+  width: 960px;
+  margin: auto;
+  margin-top: 34px;
+}
+
+.header-button {
+  display: flex;
+  justify-content: center;
+  margin-top: 89px;
+}
+
+.header-btn {
+  padding: 13px 48px;
+}

@@ -1,0 +1,41 @@
+.footer {
+  padding-top: 30px;
+  background-color: var(--fon-colors);
+  color: var(--white);
+}
+
+.footer-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 9px;
+}
+
+.footer-block1 {
+  display: flex;
+  width: 213px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-block2 {
+  margin-left: 5px;
+}
+
+.footer-text {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 146%;
+  margin-top: -2px;
+}
+
+.footer-author {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 141%;
+}
+
+.footer-contacts {
+  margin:10px;
+  margin-top: 8px;
+}

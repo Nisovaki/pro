@@ -1,0 +1,14 @@
+:root {
+  /* system */
+  --fon: rgb(18%, 20%, 29%, 0.85);
+  --inversion: #ffffff;
+  --related: #15A9CB;
+  --text-color: #383A4C;
+  --white: #ffffff;
+  --fon-colors: rgba(47, 50, 75, 1);
+
+  /* header - faq */
+  --line-btn: rgba(255, 255, 255, 0.5);
+  --block-title: rgba(255, 255, 255, 0.86);
+  --indication: rgba(74, 118, 168, 1);
+}

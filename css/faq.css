@@ -1,0 +1,57 @@
+.faq {
+  padding-top: 65px;
+  padding-bottom: 55px;
+  background-image: linear-gradient(var(--fon)), url(../img/faq-fon.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: var(--inversion);
+}
+
+.faq-title {
+  margin-right: 22px;
+}
+
+.faq-subtitle {
+  margin-top: 30px;
+  margin-bottom: 51px;
+}
+
+.faq-form {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 423px;
+  height: 100%;
+}
+
+.faq-inp {
+  height: 46px;
+  border: 1.38px solid var(--line-btn);
+  border-radius: 50px;
+  color: var(--line-btn);
+  font-size: 22px;
+  line-height: 100%;
+  padding: 10px 25px;
+  margin-bottom: 19px;
+}
+
+.faq-inp:last-of-type {
+  margin-bottom: 51px;
+}
+
+.faq-btn {
+  width: 220px;
+  padding: 12px 38px;
+  margin: auto;
+}
+
+.faq-text {
+  text-align: center;
+  margin-top: 52px;
+}
+
+.faq-link {
+  color: var(--indication);
+  border-bottom: 1px solid var(--indication);
+}
