@@ -21,7 +21,9 @@ a {
   color: inherit;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   margin: 0;
   padding: 0;
 }
@@ -32,6 +34,10 @@ h1, h2, h3 {
   align-items: center;
   margin: 11px;
   margin-right: 9px;
+}
+
+.contacts-picture {
+  display: none;
 }
 
 .tel {
@@ -63,7 +69,7 @@ h1, h2, h3 {
 input {
   background-color: transparent;
   border: none;
-  color: inherit
+  color: inherit;
 }
 
 .btn {
@@ -78,4 +84,85 @@ input {
 p {
   margin: 0;
   padding: 0;
+}
+
+@media (min-width: 1024px) and (max-width: 1440px) {
+  .container {
+    width: 1010px;
+  }
+
+  .contacts {
+    margin: 7px;
+    margin-right: 9px;
+  }
+
+  .tel {
+    font-size: 21px;
+    margin-bottom: 9px;
+  }
+
+  .link {
+    font-size: 13px;
+    padding-bottom: 4px;
+  }
+
+  .title {
+    font-size: 32px;
+  }
+
+  .subtitle {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .container {
+    width: 650px;
+    padding: 0.5rem;
+  }
+
+  .tel {
+    font-size: 16px;
+  }
+
+  .link {
+    font-size: 10px;
+  }
+
+  .btn {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 360px) and (max-width: 767px) {
+  .container {
+    width: 70%;
+    padding: 0.5rem;
+  }
+
+  .contacts {
+    display: none;
+  }
+
+  .contacts-picture {
+    display: block;
+  }
+
+  .contact-img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .btn {
+    font-size: 18px;
+  }
+
+  .title {
+    font-size: 22px;
+    line-height: 100%;
+  }
+
+  .subtitle {
+    font-size: 18px;
+  }
 }

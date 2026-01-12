@@ -7,8 +7,9 @@
   --white: #ffffff;
   --fon-colors: rgba(47, 50, 75, 1);
 
-  /* header - faq */
+  /* section - header - footer */
   --line-btn: rgba(255, 255, 255, 0.5);
   --block-title: rgba(255, 255, 255, 0.86);
   --indication: rgba(74, 118, 168, 1);
+  --author-fon: #2A2C3F;
 }
