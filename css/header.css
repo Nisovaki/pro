@@ -146,8 +146,16 @@
 
   .header-text {
     font-size: 13px;
-    width: 100%;
+    width: 97%;
     margin-top: 29px;
+  }
+
+  .header-point {
+    display: inline;
+  }
+
+  .header-del {
+    display: none;
   }
 
   .header-button {

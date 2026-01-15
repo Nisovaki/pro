@@ -53,6 +53,26 @@ h3 {
   border-bottom: 1px solid var(--line-btn);
 }
 
+.tel:hover, .link:hover {
+  color: var(--related);
+  transition: color 0.3s ease;
+}
+
+.link:hover {
+  border-bottom: 1px solid var(--related);
+  transition: border-color 0.3s ease;
+}
+
+.tel:active, .link:active {
+  color: var(--indication);
+  transition: color 0.3s ease;
+}
+
+.link:active {
+  border-bottom: 1px solid var(--indication);
+  transition: border-color 0.3s ease;
+}
+
 .title {
   font-weight: 700;
   font-size: 35px;
@@ -79,6 +99,16 @@ input {
   border: none;
   color: var(--white);
   font-weight: 500;
+}
+
+.btn:hover {
+  background-color: var(--text-color);
+  transition: background-color 0.3s ease;
+}
+
+.btn:active {
+  background-color: var(--author-fon);  
+  transition: background-color 0.3s ease;
 }
 
 p {

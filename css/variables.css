@@ -12,5 +12,6 @@
   --block-title: rgba(255, 255, 255, 0.86);
   --indication: rgba(74, 118, 168, 1);
   --author-fon: #2A2C3F;
-  --shadow-white: rgba(255, 255, 255, 0.05);
+  --shadow-white: rgba(0, 0, 0, 0.05);
+  --slider-active: rgba(75, 77, 98, 0.72);
 }

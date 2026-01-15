@@ -56,6 +56,20 @@
   border-bottom: 1px solid var(--indication);
 }
 
+.faq-link:hover {
+  color: var(--related);
+  border-bottom: 1px solid var(--related);
+  transition: color 0.3s ease, 
+              border-color 0.3s ease;
+}
+
+.faq-link:active {
+  color: var(--author-fon);
+  border-bottom: 1px solid var(--author-fon);
+  transition: color 0.3s ease, 
+              border-color 0.3s ease;
+}
+
 @media (min-width: 1024px) and (max-width: 1440px) {
   .faq {
     padding-top: 62px;
