@@ -10,7 +10,6 @@ body {
 }
 
 .container {
-  container-type: inline-size; /* Контейнер запросов по ширине */
   padding: 1rem;
   width: 1250px;
   margin: auto;
@@ -98,7 +97,8 @@ input {
   border-radius: 50px;
   border: none;
   color: var(--white);
-  font-weight: 500;
+  font-weight: 500;  
+  box-shadow: 0 4px 25px 0 var(--shadov-btn);
 }
 
 .btn:hover {

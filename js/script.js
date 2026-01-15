@@ -1,26 +1,4 @@
 document.addEventListener("DOMContentLoaded", () => {
-  // --- 1. МОБИЛЬНОЕ МЕНЮ (Бургер) ---
-  const burger = document.querySelector(".header-burger");
-  const menu = document.querySelector(".header-nav");
-  const body = document.body;
-
-  if (burger && menu) {
-    burger.addEventListener("click", () => {
-      burger.classList.toggle("active"); // Нужно добавить стили для .active
-      menu.classList.toggle("open"); // Нужно добавить стили для .open
-      body.classList.toggle("noscroll"); // Запрет прокрутки при открытом меню
-    });
-
-    // Закрытие меню при клике на ссылку
-    menu.querySelectorAll("a").forEach((link) => {
-      link.addEventListener("click", () => {
-        burger.classList.remove("active");
-        menu.classList.remove("open");
-        body.classList.remove("noscroll");
-      });
-    });
-  }
-
   // --- 2. СЛАЙДЕР ПРЕИМУЩЕСТВ (About) ---
   const sliderContainer = document.querySelector(".about-slider");
 
@@ -83,33 +61,44 @@ document.addEventListener("DOMContentLoaded", () => {
   if (faqForm) {
     faqForm.addEventListener("submit", function (e) {
       e.preventDefault();
+
+      const inputs = this.querySelectorAll(".faq-inp");
+      const emailInput =
+        this.querySelector('input[type="email"].faq-inp') ||
+        this.querySelector(".faq-email");
+
+      let hasEmpty = false;
       let hasError = false;
 
-      // Поля
-      const inputs = this.querySelectorAll(".faq-inp");
-      const emailInput = Array.from(inputs).find(
-        (i) => i.type === "email" || i.classList.contains("faq-email")
-      );
-
-      // Базовая очистка ошибок
+      // сброс бордеров + проверка на пустоту
       inputs.forEach((input) => {
         input.style.borderColor = "var(--line-btn)";
+
         if (!input.value.trim()) {
           input.style.borderColor = "red";
+          hasEmpty = true;
           hasError = true;
         }
       });
 
-      // Валидация Email (регулярное выражение)
+      // проверка email только если поле НЕ пустое
       const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-      if (emailInput && !emailRegex.test(emailInput.value)) {
+      if (
+        emailInput &&
+        emailInput.value.trim() &&
+        !emailRegex.test(emailInput.value.trim())
+      ) {
         emailInput.style.borderColor = "red";
         hasError = true;
-        alert("Пожалуйста, введите корректный адрес почты");
+
+        // alert показываем только если нет пустых полей,
+        // чтобы не мешать пользователю сначала заполнить форму
+        if (!hasEmpty) {
+          alert("Пожалуйста, введите корректный адрес почты");
+        }
       }
 
       if (!hasError) {
-        // Имитация успешной отправки
         alert("Спасибо! Ваша заявка принята.");
         faqForm.reset();
       }

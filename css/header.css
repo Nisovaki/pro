@@ -26,7 +26,8 @@
 .header-title {
   font-size: 52px;
   font-weight: 900;
-  line-height: 116%;
+  line-height: 117%;
+  margin-right: 2px;
   text-align: center;
   color: var(--block-title);
 }
@@ -37,7 +38,7 @@
   line-height: 141%;
   width: 960px;
   margin: auto;
-  margin-top: 34px;
+  margin-top: 32px;
 }
 
 .header-button {
@@ -47,7 +48,8 @@
 }
 
 .header-btn {
-  padding: 13px 48px;
+  padding: 14px 48px;
+  margin-right: 2px;
 }
 
 .header-point {
@@ -55,7 +57,7 @@
 }
 
 .header-del {
-  display: block;
+  display: inline;
 }
 
 @media (min-width: 1024px) and (max-width: 1440px) {
