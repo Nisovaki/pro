@@ -206,3 +206,26 @@
     margin-top: 53px;
   }
 }
+
+/* Состояние меню при открытии */
+@media (max-width: 767px) {
+  .header-nav.open {
+    display: block; /* Или flex, смотря как сверстано */
+    transform: translateX(0); /* Если используете анимацию выезда */
+  }
+}
+
+/* Запрет скролла страницы при открытом меню */
+.noscroll {
+  overflow: hidden;
+}
+
+/* Чтобы слайдер в About был без полосы прокрутки на мобилках */
+.about-block::-webkit-scrollbar {
+  display: none;
+}
+
+.about-block {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
