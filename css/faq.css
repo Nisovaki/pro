@@ -171,3 +171,53 @@
     margin-top: 52px;
   }
 }
+
+@media (min-width: 320px) and (max-width: 359px) {
+  .faq {
+    padding-top: 23px;
+    padding-bottom: 21px;
+  }
+
+  .faq-title {
+    margin-right: 1px;
+  }
+
+  .faq-subtitle {
+    margin-top: 14px;
+    margin-bottom: 36px;
+    font-size: 12px;
+  }
+
+  .faq-form {
+    width: 289px;
+    height: 100%;
+  }
+
+  .faq-inp {
+    height: 30px;
+    border: 1px solid var(--line-btn);
+    font-size: 14px;
+    padding: 7px 18px;
+    margin-bottom: 13px;
+  }
+
+  .faq-email {
+    padding: 6px 16px;
+  }
+
+  .faq-inp:last-of-type {
+    margin-bottom: 44px;
+    margin-top: -1px;
+  }
+
+  .faq-btn {
+    width: 174px;
+    padding: 10px 25px;
+  }
+
+  .faq-text {
+    margin-top: 30px;
+    font-size: 11px;
+    line-height: 117%;
+  }
+}

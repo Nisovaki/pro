@@ -247,4 +247,55 @@
   }
 }
 
+@media (min-width: 320px) and (max-width: 359px) {
+  .about {
+    padding-top: 14px;
+    padding-bottom: 54px;
+  }
 
+  .about-title {
+    margin-left: 5px;
+  }
+
+  .about-subtitle {
+    margin-top: 18px;
+    margin-right: -1px;
+  }
+
+  .about-subtitle::after {
+    height: 1px;
+    width: 21.76px;
+    right: 26.3%;
+  }
+
+  .about-subtitle::before {
+    height: 1px;
+    width: 20px;
+    left: 27%;
+  }
+
+  .about-text {
+    font-size: 12px;
+    width: 99%;
+    margin-top: 30px;
+    margin-right: 5px;
+  }
+
+  .about-block {
+    width: 100%;
+    margin-top: 41px;
+  }
+
+  .about-figure {
+    font-size: 52px;
+    width: 104px;
+    height: 104px;
+    padding-top: 14.7%;
+  }
+
+  .about-advantage {
+    width: 90%;
+    margin-top: 25px;
+    font-size: 18px;
+  }
+}

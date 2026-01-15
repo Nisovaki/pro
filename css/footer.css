@@ -152,5 +152,48 @@
   .footer-delite {
     display: none;
   }
+}
 
+@media (min-width: 320px) and (max-width: 359px) {
+  .footer {
+    padding-top: 17px;
+    padding-bottom: 17px;
+  }
+
+  .footer-block {
+    margin-left: 1px;
+  }
+
+  .footer-block1 {
+    width: 133px;
+  }
+
+  .footer-logo {
+    width: 30px;
+    height: 30px;
+  }
+
+  .footer-block2 {
+    display: none;
+  }
+
+  .footer-text {
+    font-size: 8px;
+    line-height: 163%;
+    margin-top: -1px;
+  }
+
+  .footer-delite {
+    display: none;
+  }
+
+  .author {
+    display: block;
+    text-align: center;
+    background-color: var(--author-fon);
+    color: var(--white);
+    padding-top: 6px;
+    padding-bottom: 8px;
+    font-size: 12px;
+  }
 }
