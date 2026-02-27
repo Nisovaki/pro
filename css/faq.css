@@ -1,6 +1,6 @@
 .faq {
-  padding-top: 65px;
-  padding-bottom: 55px;
+  padding-top: 64px;
+  padding-bottom: 56px;
   background-image: linear-gradient(var(--fon)), url(../img/faq-fon.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -9,12 +9,13 @@
 }
 
 .faq-title {
-  margin-right: 22px;
+  margin-right: 25px;
 }
 
 .faq-subtitle {
-  margin-top: 30px;
+  margin-top: 31px;
   margin-bottom: 51px;
+  margin-right: 2px;
 }
 
 .faq-form {
@@ -37,12 +38,12 @@
 }
 
 .faq-inp:last-of-type {
-  margin-bottom: 51px;
+  margin-bottom: 49px;
 }
 
 .faq-btn {
-  width: 220px;
-  padding: 12px 38px;
+  width: 218px;
+  padding: 12px 38px 12.5px 38px;
   margin: auto;
 }
 
@@ -59,31 +60,33 @@
 .faq-link:hover {
   color: var(--related);
   border-bottom: 1px solid var(--related);
-  transition: color 0.3s ease, 
-              border-color 0.3s ease;
+  transition:
+    color 0.3s ease,
+    border-color 0.3s ease;
 }
 
 .faq-link:active {
   color: var(--author-fon);
   border-bottom: 1px solid var(--author-fon);
-  transition: color 0.3s ease, 
-              border-color 0.3s ease;
+  transition:
+    color 0.3s ease,
+    border-color 0.3s ease;
 }
 
 @media (min-width: 1024px) and (max-width: 1440px) {
   .faq {
-    padding-top: 62px;
+    padding-top: 63px;
     padding-bottom: 42px;
   }
 
   .faq-title {
-    margin-right: 10px;
+    margin-right: 9px;
   }
 
   .faq-subtitle {
     margin-top: 26px;
     margin-bottom: 50px;
-    margin-left: 14px;
+    margin-left: 18px;
   }
 
   .faq-form {
@@ -110,7 +113,11 @@
   .faq-text {
     font-size: 17px;
     margin-top: 30px;
-    margin-right: 2px;
+    margin-right: 1px;
+  }
+
+  .faq-btn {
+    padding: 12px 38px 13.5px 38px;
   }
 }
 
@@ -188,18 +195,19 @@
 
 @media (min-width: 320px) and (max-width: 359px) {
   .faq {
-    padding-top: 23px;
+    padding-top: 24px;
     padding-bottom: 21px;
   }
 
   .faq-title {
-    margin-right: 1px;
+    margin-right: 2px;
   }
 
   .faq-subtitle {
-    margin-top: 14px;
+    margin-top: 13px;
     margin-bottom: 36px;
     font-size: 12px;
+    margin-right: 1px;
   }
 
   .faq-form {
@@ -227,6 +235,7 @@
   .faq-btn {
     width: 174px;
     padding: 10px 25px;
+    margin-right: 20.4%;
   }
 
   .faq-text {

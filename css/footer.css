@@ -1,5 +1,5 @@
 .footer {
-  padding-top: 30px;
+  padding-top: 28px;
   padding-bottom: 30px;
   background-color: var(--fon-colors);
   color: var(--white);
@@ -22,6 +22,7 @@
 .footer-logo {
   width: 68px;
   height: 68px;
+  margin-top: -1px;
 }
 
 .footer-block2 {
@@ -32,7 +33,7 @@
   font-size: 12px;
   font-weight: 500;
   line-height: 146%;
-  margin-top: -2px;
+  margin-top: -1px;
 }
 
 .footer-author {
@@ -42,18 +43,26 @@
 }
 
 .footer-contacts {
-  margin: 10px;
-  margin-top: 8px;
+  margin: 0;
+  padding: 10px;
+}
+
+.footer-tel {
+  margin-bottom: 9px;
 }
 
 .author {
   display: none;
 }
 
+.footer-whitespace {
+  display: none;
+}
+
 @media (min-width: 1024px) and (max-width: 1440px) {
   .footer {
-    padding-top: 18px;
-    padding-bottom: 30px;
+    padding-top: 12px;
+    padding-bottom: 33px;
   }
 
   .footer-logo {
@@ -62,11 +71,12 @@
   }
 
   .footer-block {
-    margin-left: 6px;
+    margin-left: 7px;
   }
 
   .footer-block1 {
-    width: 206px;
+    width: 205px;
+    margin-top: 9px;
   }
 
   .footer-text {
@@ -76,7 +86,7 @@
 
   .footer-contacts {
     margin: 9px;
-    margin-top: 10px;
+    margin-top: 6px;
   }
 
   .footer-delite {
@@ -84,8 +94,21 @@
   }
 
   .footer-block2 {
-    margin-left: 0px;
-    margin-right: 11px;
+    margin-left: 0;
+    margin-right: 22px;
+    margin-top: 8px;
+  }
+
+  .footer-whitespace {
+    display: inline;
+    padding-left: 3px;
+  }
+
+  .footer-contacts {
+    margin: 0;
+    padding: 0;
+    margin-top: 10px;
+    margin-right: 8px;
   }
 }
 
@@ -157,7 +180,7 @@
 
 @media (min-width: 320px) and (max-width: 359px) {
   .footer {
-    padding-top: 17px;
+    padding-top: 18px;
     padding-bottom: 17px;
   }
 
@@ -172,6 +195,10 @@
   .footer-logo {
     width: 30px;
     height: 30px;
+  }
+
+  .footer-item {
+    margin-top: -1px;
   }
 
   .footer-block2 {

@@ -1,6 +1,6 @@
 .header {
   padding-top: 24px;
-  padding-bottom: 105px;
+  padding-bottom: 104px;
   background-image: linear-gradient(var(--fon)), url(../img/header-fon.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -63,11 +63,11 @@
 @media (min-width: 1024px) and (max-width: 1440px) {
   .header {
     padding-top: 10px;
-    padding-bottom: 55px;
+    padding-bottom: 54px;
   }
 
   .header-logo {
-    margin-left: 6px;
+    margin-left: 7px;
     width: 60px;
     height: 60px;
   }
@@ -85,12 +85,19 @@
   .header-text {
     font-size: 18px;
     width: 754px;
-    margin-top: 29px;
+    margin-top: 28px;
+    margin-left: 11.5%;
   }
 
   .header-button {
     margin-right: 5px;
     margin-top: 56px;
+  }
+
+  .header-btn {
+    margin-right: -3px;
+    padding: 13px 38px 15px 37px;
+    width: 202px;
   }
 }
 
@@ -171,7 +178,7 @@
 
 @media (min-width: 320px) and (max-width: 359px) {
   .header {
-    padding-top: 7px;
+    padding-top: 6.6px;
     padding-bottom: 57px;
   }
 
@@ -191,6 +198,7 @@
 
   .header-title {
     font-size: 20px;
+    margin: 0;
   }
 
   .header-del {
@@ -209,7 +217,7 @@
   }
 
   .header-btn {
-    padding: 9px 40px;
+    padding: 9px 39px;
   }
 
   .header-button {

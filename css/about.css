@@ -1,7 +1,7 @@
 .about-old {
   display: block;
   padding-top: 55px;
-  padding-bottom: 56px;
+  padding-bottom: 57px;
 }
 
 .about {
@@ -10,11 +10,12 @@
 
 .about-title {
   margin-top: 9px;
+  margin-left: -2px;
 }
 
 .about-subtitle {
   margin-top: 39px;
-  margin-right: 2px;
+  margin-right: 3px;
   position: relative;
 }
 
@@ -25,7 +26,7 @@
   width: 43px;
   display: block;
   position: absolute;
-  top: 50%;
+  top: 49%;
   right: 42.3%;
 }
 
@@ -36,7 +37,7 @@
   width: 43px;
   display: block;
   position: absolute;
-  top: 50%;
+  top: 49%;
   left: 42.3%;
 }
 
@@ -46,7 +47,7 @@
   line-height: 141%;
   width: 724px;
   margin: auto;
-  margin-top: 37px;
+  margin-top: 36px;
 }
 
 .about-block {
@@ -54,8 +55,8 @@
   text-align: center;
   justify-content: center;
   margin: auto;
-  width: 982px;
-  margin-top: 57px;
+  width: 984px;
+  margin-top: 58px;
 }
 
 .about-list {
@@ -72,7 +73,7 @@
   border-radius: 100%;
   width: 122px;
   height: 122px;
-  padding-top: 23%;
+  padding-top: 22.5%;
 }
 
 .about-advantage {
@@ -83,9 +84,18 @@
   line-height: 141%;
 }
 
+.about-advantage__whitespace {
+  display: none;
+}
+
 @media (min-width: 1024px) and (max-width: 1440px) {
-  .about {
-    padding-bottom: 57px;
+  .about-old {
+    padding-bottom: 56px;
+  }
+
+  .about-title {
+    margin-top: 8px;
+    margin-left: -2px;
   }
 
   .about-subtitle {
@@ -111,29 +121,39 @@
     font-size: 16px;
     width: 666px;
     margin-top: 33px;
-    line-height: 139%;
+    line-height: 140%;
   }
 
   .about-block {
     width: 925px;
-    margin-top: 59px;
+    margin-top: 60px;
+  }
+
+  .about-list:first-child {
+    margin-left: 1px;
   }
 
   .about-list:last-child {
-    margin-right: 5px;
+    margin-right: 3px;
   }
 
   .about-figure {
     font-size: 52px;
     width: 104px;
     height: 104px;
-    padding-top: 19%;
+    padding-top: 18%;
   }
 
   .about-advantage {
     width: 196px;
-    margin-top: 26px;
+    margin-top: 25px;
     font-size: 18px;
+    line-height: 140%;
+  }
+
+  .about-advantage__whitespace {
+    display: inline;
+    padding-left: 5px;
   }
 }
 
@@ -265,6 +285,7 @@
 
   .about-title {
     margin-left: 5px;
+    line-height: 118%;
   }
 
   .about-subtitle {
@@ -282,6 +303,10 @@
     height: 1px;
     width: 20px;
     left: 27%;
+  }
+
+  .about-list {
+    margin-right: 2px;
   }
 
   .about-text {
@@ -367,7 +392,9 @@
   /* Цвет иконки по умолчанию */
   .about-slider-arrow {
     color: #434343; /* Устанавливаем начальный цвет для currentColor */
-    transition: background-color 0.3s, color 0.3s; /* Плавный переход */
+    transition:
+      background-color 0.3s,
+      color 0.3s; /* Плавный переход */
   }
 
   /* Эффект при наведении на кнопку */
@@ -384,8 +411,10 @@
 
   .about-arrow1 {
     width: 9px;
-    height: 15px;
+    height: 16px;
     display: block;
+    margin-top: 2px;
+    margin-right: 3px;
   }
 
   .about-arrow2 {

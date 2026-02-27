@@ -2,7 +2,6 @@ document.addEventListener("DOMContentLoaded", () => {
   // --- 2. СЛАЙДЕР ПРЕИМУЩЕСТВ (About) ---
   const sliderContainer = document.querySelector(".about-slider");
 
-  // Функция инициализации слайдера
   function initAboutSlider() {
     if (!sliderContainer) return;
 
@@ -15,41 +14,44 @@ document.addEventListener("DOMContentLoaded", () => {
 
     function showSlide(index) {
       slides.forEach((slide) => {
-        slide.style.display = "none"; // Скрываем все
+        slide.style.display = "none";
         slide.classList.remove("active");
       });
-      slides[index].style.display = "block"; // Показываем нужный
-      slides[index].classList.add("active");
+      if (slides[index]) {
+        slides[index].style.display = "block";
+        slides[index].classList.add("active");
+      }
     }
 
-    // Листалка назад
-    prevButton.onclick = (e) => {
-      e.preventDefault();
-      currentSlide = (currentSlide - 1 + slides.length) % slides.length;
-      showSlide(currentSlide);
-    };
+    // Безопасное назначение кликов
+    if (prevButton) {
+      prevButton.addEventListener('click', (e) => {
+        e.preventDefault();
+        currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+        showSlide(currentSlide);
+      });
+    }
 
-    // Листалка вперед
-    nextButton.onclick = (e) => {
-      e.preventDefault();
-      currentSlide = (currentSlide + 1) % slides.length;
-      showSlide(currentSlide);
-    };
+    if (nextButton) {
+      nextButton.addEventListener('click', (e) => {
+        e.preventDefault();
+        currentSlide = (currentSlide + 1) % slides.length;
+        showSlide(currentSlide);
+      });
+    }
 
-    // Запуск первого слайда
     showSlide(currentSlide);
   }
 
-  // Запускаем слайдер
   initAboutSlider();
 
   // --- 3. МАСКА ТЕЛЕФОНА (FAQ) ---
-  // Ищем поле по типу tel или по селектору
   const phoneInput =
     document.querySelector('input[type="tel"]') ||
     document.querySelector('.faq-inp[placeholder*="тел"]');
 
-  if (phoneInput) {
+  // Проверяем наличие библиотеки IMask и самого инпута
+  if (phoneInput && typeof IMask !== 'undefined') {
     IMask(phoneInput, {
       mask: "+{7} (000) 000-00-00",
     });
@@ -64,15 +66,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
       const inputs = this.querySelectorAll(".faq-inp");
       const emailInput =
-        this.querySelector('input[type="email"].faq-inp') ||
+        this.querySelector('input[type="email"]') ||
         this.querySelector(".faq-email");
 
       let hasEmpty = false;
       let hasError = false;
 
-      // сброс бордеров + проверка на пустоту
       inputs.forEach((input) => {
-        input.style.borderColor = "var(--line-btn)";
+        // Сбрасываем стили (лучше через класс, но можно и так)
+        input.style.borderColor = "";
 
         if (!input.value.trim()) {
           input.style.borderColor = "red";
@@ -81,7 +83,6 @@ document.addEventListener("DOMContentLoaded", () => {
         }
       });
 
-      // проверка email только если поле НЕ пустое
       const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
       if (
         emailInput &&
@@ -91,8 +92,6 @@ document.addEventListener("DOMContentLoaded", () => {
         emailInput.style.borderColor = "red";
         hasError = true;
 
-        // alert показываем только если нет пустых полей,
-        // чтобы не мешать пользователю сначала заполнить форму
         if (!hasEmpty) {
           alert("Пожалуйста, введите корректный адрес почты");
         }
@@ -101,6 +100,8 @@ document.addEventListener("DOMContentLoaded", () => {
       if (!hasError) {
         alert("Спасибо! Ваша заявка принята.");
         faqForm.reset();
+        // Сбрасываем бордеры после успешной отправки
+        inputs.forEach(inp => inp.style.borderColor = "");
       }
     });
   }
